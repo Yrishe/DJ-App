@@ -324,8 +324,33 @@ void DJController::cue(int deckIndex)
 
 void DJController::loadTrack(int deckIndex)
 {
-    // This would typically open a file chooser
-    // For now, just a placeholder
+    auto chooser = std::make_unique<juce::FileChooser>("Select an audio file to load...",
+                                                      juce::File::getSpecialLocation(juce::File::userMusicDirectory),
+                                                      "*.wav;*.mp3;*.aiff;*.flac;*.ogg;*.m4a");
+    
+    auto fileChooserFlags = juce::FileBrowserComponent::openMode | juce::FileBrowserComponent::canSelectFiles;
+    
+    chooser->launchAsync(fileChooserFlags, [this, deckIndex](const juce::FileChooser& fc)
+    {
+        juce::File selectedFile = fc.getResult();
+        
+        if (selectedFile.existsAsFile())
+        {
+            Track track(selectedFile);
+            
+            if (track.isValid())
+            {
+                loadTrackToDeck(deckIndex, track);
+            }
+            else
+            {
+                juce::AlertWindow::showMessageBoxAsync(
+                    juce::AlertWindow::WarningIcon,
+                    "Error",
+                    "Could not load the selected audio file. Please make sure it's a valid audio format.");
+            }
+        }
+    });
 }
 
 void DJController::toggleSync(int deckIndex)
