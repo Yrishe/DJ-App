@@ -5,13 +5,13 @@
 	<key>BuildMachineOSBuild</key>
 	<string>24G84</string>
 	<key>CFBundleDisplayName</key>
-	<string>DJ GUI_New</string>
+	<string>DJ GUI New</string>
 	<key>CFBundleExecutable</key>
 	<string>NewProject</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.DJGUI_New</string>
+	<string>com.yourcompany.DJGUINew</string>
 	<key>CFBundleName</key>
-	<string>DJ GUI_New</string>
+	<string>DJ GUI New</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -41,7 +41,7 @@
 	<key>DTXcodeBuild</key>
 	<string>16E140</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.13</string>
+	<string>11.0</string>
 	<key>NSHighResolutionCapable</key>
 	<true/>
 </dict>

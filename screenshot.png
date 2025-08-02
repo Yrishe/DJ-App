@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="640" viewBox="0 0 1024 640">
+  <!-- Background -->
+  <rect width="1024" height="640" fill="#1a1a1a"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1024" height="40" fill="#2d2d2d"/>
+  <text x="512" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">DJ GUI_New</text>
+  
+  <!-- Deck 2 -->
+  <rect x="10" y="50" width="430" height="280" fill="#333" stroke="#4a9eff" stroke-width="2" rx="5"/>
+  <rect x="10" y="50" width="430" height="30" fill="#4a9eff"/>
+  <text x="225" y="70" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">DECK 2</text>
+  
+  <!-- No Track Loaded -->
+  <text x="225" y="110" text-anchor="middle" fill="#888" font-family="Arial, sans-serif" font-size="12">No Track Loaded</text>
+  
+  <!-- Time Display -->
+  <text x="50" y="130" fill="#4a9eff" font-family="Arial, sans-serif" font-size="10">00:00 / 00:00</text>
+  <text x="400" y="130" text-anchor="end" fill="#4a9eff" font-family="Arial, sans-serif" font-size="10">120.0 BPM</text>
+  
+  <!-- Control Buttons -->
+  <rect x="20" y="140" width="40" height="20" fill="#4a9eff" rx="3"/>
+  <text x="40" y="153" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">PLAY</text>
+  
+  <rect x="70" y="140" width="40" height="20" fill="#666" rx="3"/>
+  <text x="90" y="153" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">STOP</text>
+  
+  <rect x="20" y="170" width="40" height="20" fill="#666" rx="3"/>
+  <text x="40" y="183" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">CUE</text>
+  
+  <rect x="70" y="170" width="40" height="20" fill="#666" rx="3"/>
+  <text x="90" y="183" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">LOAD</text>
+  
+  <rect x="20" y="200" width="40" height="20" fill="#666" rx="3"/>
+  <text x="40" y="213" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">SYNC</text>
+  
+  <rect x="70" y="200" width="40" height="20" fill="#666" rx="3"/>
+  <text x="90" y="213" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">LOOP</text>
+  
+  <!-- Waveform Area -->
+  <rect x="130" y="140" width="200" height="80" fill="#222" stroke="#555" rx="3"/>
+  <text x="230" y="185" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="10">No audio loaded</text>
+  
+  <!-- Jog Wheel -->
+  <circle cx="225" cy="270" r="50" fill="#444" stroke="#666" stroke-width="2"/>
+  <circle cx="225" cy="270" r="30" fill="#666"/>
+  <circle cx="225" cy="270" r="5" fill="#888"/>
+  <text x="225" y="320" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">0.0 RPM</text>
+  
+  <!-- EQ Sliders -->
+  <rect x="350" y="140" width="15" height="80" fill="#333" stroke="#555" rx="2"/>
+  <rect x="350" y="180" width="15" height="5" fill="#4a9eff" rx="1"/>
+  
+  <rect x="370" y="140" width="15" height="80" fill="#333" stroke="#555" rx="2"/>
+  <rect x="370" y="180" width="15" height="5" fill="#4a9eff" rx="1"/>
+  
+  <rect x="390" y="140" width="15" height="80" fill="#333" stroke="#555" rx="2"/>
+  <rect x="390" y="180" width="15" height="5" fill="#4a9eff" rx="1"/>
+  
+  <!-- Volume Slider -->
+  <rect x="410" y="140" width="15" height="80" fill="#333" stroke="#555" rx="2"/>
+  <rect x="410" y="160" width="15" height="5" fill="#4a9eff" rx="1"/>
+  
+  <!-- Deck 3 -->
+  <rect x="584" y="50" width="430" height="280" fill="#333" stroke="#4a9eff" stroke-width="2" rx="5"/>
+  <rect x="584" y="50" width="430" height="30" fill="#4a9eff"/>
+  <text x="799" y="70" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">DECK 3</text>
+  
+  <!-- No Track Loaded -->
+  <text x="799" y="110" text-anchor="middle" fill="#888" font-family="Arial, sans-serif" font-size="12">No Track Loaded</text>
+  
+  <!-- Time Display -->
+  <text x="624" y="130" fill="#4a9eff" font-family="Arial, sans-serif" font-size="10">00:00 / 00:00</text>
+  <text x="974" y="130" text-anchor="end" fill="#4a9eff" font-family="Arial, sans-serif" font-size="10">120.0 BPM</text>
+  
+  <!-- Control Buttons -->
+  <rect x="594" y="140" width="40" height="20" fill="#4a9eff" rx="3"/>
+  <text x="614" y="153" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">PLAY</text>
+  
+  <rect x="644" y="140" width="40" height="20" fill="#666" rx="3"/>
+  <text x="664" y="153" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">STOP</text>
+  
+  <rect x="594" y="170" width="40" height="20" fill="#666" rx="3"/>
+  <text x="614" y="183" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">CUE</text>
+  
+  <rect x="644" y="170" width="40" height="20" fill="#666" rx="3"/>
+  <text x="664" y="183" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">LOAD</text>
+  
+  <rect x="594" y="200" width="40" height="20" fill="#666" rx="3"/>
+  <text x="614" y="213" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">SYNC</text>
+  
+  <rect x="644" y="200" width="40" height="20" fill="#666" rx="3"/>
+  <text x="664" y="213" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">LOOP</text>
+  
+  <!-- Waveform Area -->
+  <rect x="704" y="140" width="200" height="80" fill="#222" stroke="#555" rx="3"/>
+  <text x="804" y="185" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="10">No audio loaded</text>
+  
+  <!-- Jog Wheel -->
+  <circle cx="799" cy="270" r="50" fill="#444" stroke="#666" stroke-width="2"/>
+  <circle cx="799" cy="270" r="30" fill="#666"/>
+  <circle cx="799" cy="270" r="5" fill="#888"/>
+  <text x="799" y="320" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">0.0 RPM</text>
+  
+  <!-- EQ Sliders -->
+  <rect x="924" y="140" width="15" height="80" fill="#333" stroke="#555" rx="2"/>
+  <rect x="924" y="180" width="15" height="5" fill="#4a9eff" rx="1"/>
+  
+  <rect x="944" y="140" width="15" height="80" fill="#333" stroke="#555" rx="2"/>
+  <rect x="944" y="180" width="15" height="5" fill="#4a9eff" rx="1"/>
+  
+  <rect x="964" y="140" width="15" height="80" fill="#333" stroke="#555" rx="2"/>
+  <rect x="964" y="180" width="15" height="5" fill="#4a9eff" rx="1"/>
+  
+  <!-- Volume Slider -->
+  <rect x="984" y="140" width="15" height="80" fill="#333" stroke="#555" rx="2"/>
+  <rect x="984" y="160" width="15" height="5" fill="#4a9eff" rx="1"/>
+  
+  <!-- Center Mixer Section -->
+  <rect x="450" y="50" width="124" height="280" fill="#2a2a2a" stroke="#555" rx="5"/>
+  
+  <!-- CUE/MASTER Labels -->
+  <text x="467" y="70" fill="#4a9eff" font-family="Arial, sans-serif" font-size="10">CUE</text>
+  <text x="540" y="70" fill="white" font-family="Arial, sans-serif" font-size="10">MASTER</text>
+  
+  <!-- Master Volume Sliders -->
+  <rect x="460" y="90" width="15" height="120" fill="#333" stroke="#555" rx="2"/>
+  <rect x="460" y="150" width="15" height="5" fill="#4a9eff" rx="1"/>
+  <text x="467" y="225" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">0.00</text>
+  
+  <rect x="550" y="90" width="15" height="120" fill="#333" stroke="#555" rx="2"/>
+  <rect x="550" y="150" width="15" height="5" fill="#4a9eff" rx="1"/>
+  <text x="557" y="225" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">0.00</text>
+  
+  <!-- Crossfader -->
+  <rect x="480" y="250" width="60" height="15" fill="#333" stroke="#555" rx="2"/>
+  <rect x="507" y="252" width="6" height="11" fill="#4a9eff" rx="1"/>
+  <text x="510" y="275" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">CROSSFADER</text>
+  
+  <!-- Control Buttons in Center -->
+  <rect x="480" y="290" width="30" height="15" fill="#ff4444" rx="2"/>
+  <text x="495" y="300" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">REC</text>
+  
+  <rect x="520" y="290" width="30" height="15" fill="#666" rx="2"/>
+  <text x="535" y="300" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">AUTO</text>
+  
+  <rect x="480" y="310" width="70" height="15" fill="#4a9eff" rx="2"/>
+  <text x="515" y="320" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">SYNC</text>
+  
+  <!-- Playlist Sections -->
+  <rect x="10" y="340" width="502" height="290" fill="#333" stroke="#555" rx="5"/>
+  <rect x="10" y="340" width="502" height="30" fill="#2a2a2a"/>
+  <text x="261" y="360" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">PLAYLIST</text>
+  
+  <!-- Playlist Controls -->
+  <rect x="20" y="380" width="60" height="20" fill="#4a9eff" rx="3"/>
+  <text x="50" y="393" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Add Files</text>
+  
+  <rect x="90" y="380" width="60" height="20" fill="#666" rx="3"/>
+  <text x="120" y="393" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Add Folder</text>
+  
+  <rect x="300" y="380" width="50" height="20" fill="#ff4444" rx="3"/>
+  <text x="325" y="393" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Remove</text>
+  
+  <rect x="360" y="380" width="50" height="20" fill="#ff4444" rx="3"/>
+  <text x="385" y="393" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Clear All</text>
+  
+  <!-- Playlist Table Headers -->
+  <rect x="20" y="410" width="40" height="20" fill="#2a2a2a"/>
+  <text x="40" y="423" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Title</text>
+  
+  <rect x="180" y="410" width="40" height="20" fill="#2a2a2a"/>
+  <text x="200" y="423" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Artist</text>
+  
+  <rect x="300" y="410" width="40" height="20" fill="#2a2a2a"/>
+  <text x="320" y="423" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Album</text>
+  
+  <rect x="410" y="410" width="40" height="20" fill="#2a2a2a"/>
+  <text x="430" y="423" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Genre</text>
+  
+  <rect x="475" y="410" width="30" height="20" fill="#2a2a2a"/>
+  <text x="490" y="423" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Duration</text>
+  
+  <!-- Right Playlist -->
+  <rect x="522" y="340" width="502" height="290" fill="#333" stroke="#555" rx="5"/>
+  <rect x="522" y="340" width="502" height="30" fill="#2a2a2a"/>
+  <text x="773" y="360" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">PLAYLIST</text>
+  
+  <!-- Right Playlist Controls -->
+  <rect x="532" y="380" width="60" height="20" fill="#4a9eff" rx="3"/>
+  <text x="562" y="393" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Add Files</text>
+  
+  <rect x="602" y="380" width="60" height="20" fill="#666" rx="3"/>
+  <text x="632" y="393" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Add Folder</text>
+  
+  <rect x="812" y="380" width="50" height="20" fill="#ff4444" rx="3"/>
+  <text x="837" y="393" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Remove</text>
+  
+  <rect x="872" y="380" width="50" height="20" fill="#ff4444" rx="3"/>
+  <text x="897" y="393" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Clear All</text>
+  
+  <!-- Progress Bars at Bottom -->
+  <rect x="10" y="650" width="502" height="5" fill="#333"/>
+  <rect x="10" y="650" width="0" height="5" fill="#4a9eff"/>
+  <text x="15" y="670" fill="white" font-family="Arial, sans-serif" font-size="10">0 tracks</text>
+  
+  <rect x="522" y="650" width="502" height="5" fill="#333"/>
+  <rect x="522" y="650" width="0" height="5" fill="#4a9eff"/>
+  <text x="527" y="670" fill="white" font-family="Arial, sans-serif" font-size="10">0 tracks</text>
+</svg>

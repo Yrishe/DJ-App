@@ -16,7 +16,7 @@ public:
     int getBPM() const { return bpm; }
     const juce::File& getFile() const { return file; }
     juce::String getFilePath() const { return file.getFullPathName(); }
-    juce::String getFileName() const { return file.getFileNameWithoutExtension(); }
+    juce::String getFileName() const { return file.getFileNameWithoutExtension(); }	
     
     // Setters
     void setTitle(const juce::String& newTitle) { title = newTitle; }
