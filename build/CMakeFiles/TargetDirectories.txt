@@ -1,0 +1,3 @@
+/Users/yrish/TRAE Projects/DJ Desktop App/DJ-App/build/CMakeFiles/DJApp.dir
+/Users/yrish/TRAE Projects/DJ Desktop App/DJ-App/build/CMakeFiles/edit_cache.dir
+/Users/yrish/TRAE Projects/DJ Desktop App/DJ-App/build/CMakeFiles/rebuild_cache.dir

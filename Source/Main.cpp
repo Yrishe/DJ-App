@@ -7,15 +7,7 @@
 */
 
 #include <JuceHeader.h>
-#include "MainComponent.h"
-
-#include <iostream>
-#define HELLO_WORLD std::cout << "I am from a macro! " << std::endl;
-
-//int main()
-//{
-//    HELLO_WORLD
-//}
+#include "View/MainView.h"
 
 //==============================================================================
 class NewProjectApplication  : public juce::JUCEApplication
@@ -63,34 +55,61 @@ public:
         This class implements the desktop window that contains an instance of
         our MainComponent class.
     */
-    class MainWindow    : public juce::DocumentWindow
+    class MainWindow    : public juce::DocumentWindow,
+                           public juce::AudioAppComponent
     {
     public:
         MainWindow (juce::String name)
             : DocumentWindow (name,
                               juce::Desktop::getInstance().getDefaultLookAndFeel()
                                                           .findColour (juce::ResizableWindow::backgroundColourId),
-                              DocumentWindow::allButtons), audioThumb(512, formatManager, thumbCache)
+                              DocumentWindow::allButtons)
         {
             setUsingNativeTitleBar (true);
-            setContentOwned (new MainComponent(formatManager, thumbCache), true);
+            
+            // Create and set the main view
+            mainView = std::make_unique<MainView>();
+            setContentOwned (mainView.release(), true);
+            
+            // Setup audio
+            setAudioChannels (0, 2); // No input, stereo output
 
            #if JUCE_IOS || JUCE_ANDROID
             setFullScreen (true);
            #else
-            setResizable (true, true);
-            centreWithSize (getWidth(), getHeight());
+            DocumentWindow::setResizable (true, true);
+            DocumentWindow::centreWithSize (1400, 900);
            #endif
 
-            setVisible (true);
+            DocumentWindow::setVisible (true);
         }
 
         void closeButtonPressed() override
         {
-            // This is called when the user tries to close this window. Here, we'll just
-            // ask the app to quit when this happens, but you can change this to do
-            // whatever you need.
+            // Shutdown audio before closing
+            shutdownAudio();
             JUCEApplication::getInstance()->systemRequestedQuit();
+        }
+        
+        // AudioAppComponent methods
+        void prepareToPlay (int samplesPerBlockExpected, double sampleRate) override
+        {
+            if (auto* mainView = dynamic_cast<MainView*>(getContentComponent()))
+                mainView->prepareToPlay(samplesPerBlockExpected, sampleRate);
+        }
+        
+        void getNextAudioBlock (const juce::AudioSourceChannelInfo& bufferToFill) override
+        {
+            if (auto* mainView = dynamic_cast<MainView*>(getContentComponent()))
+                mainView->getNextAudioBlock(bufferToFill);
+            else
+                bufferToFill.clearActiveBufferRegion();
+        }
+        
+        void releaseResources() override
+        {
+            if (auto* mainView = dynamic_cast<MainView*>(getContentComponent()))
+                mainView->releaseResources();
         }
 
         /* Note: Be careful if you override any DocumentWindow methods - the base
@@ -101,11 +120,9 @@ public:
         */
 
     private:
+        std::unique_ptr<MainView> mainView;
+        
         JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainWindow)
-        AudioFormatManager formatManager;
-        AudioThumbnail audioThumb;
-        //load up to 100 caches
-        class AudioThumbnailCache thumbCache{100};
     };
 
 private:
