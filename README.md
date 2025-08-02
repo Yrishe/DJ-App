@@ -2,7 +2,7 @@
 
 A modern, cross-platform DJ application built with JUCE framework, featuring a clean MVC architecture and professional audio capabilities.
 
-![DJ Desktop App Interface](screenshot.png)
+<img width="1395" height="922" alt="image" src="https://github.com/user-attachments/assets/b702edc9-b21b-4721-b1b1-29badeefbe40" />
 
 ## Features
 
