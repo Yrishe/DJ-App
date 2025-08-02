@@ -154,10 +154,6 @@ Source/
 4. Test thoroughly with different audio formats
 5. Submit a pull request
 
-## License
-
-See `LICENSE` file for details.
-
 ## Acknowledgments
 
 - Built with [JUCE Framework](https://juce.com/)
