@@ -328,9 +328,7 @@ void DJController::loadTrack(int deckIndex)
                                                       juce::File::getSpecialLocation(juce::File::userMusicDirectory),
                                                       "*.wav;*.mp3;*.aiff;*.flac;*.ogg;*.m4a");
     
-    auto fileChooserFlags = juce::FileBrowserComponent::openMode | juce::FileBrowserComponent::canSelectFiles;
-    
-    chooser->launchAsync(fileChooserFlags, [this, deckIndex](const juce::FileChooser& fc)
+    chooser->launchAsync(juce::FileBrowserComponent::openMode | juce::FileBrowserComponent::canSelectFiles, [this, deckIndex](const juce::FileChooser& fc)
     {
         juce::File selectedFile = fc.getResult();
         
